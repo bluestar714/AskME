@@ -9,7 +9,7 @@ $params = $_POST;
 		$r = file_put_contents("aaa.txt", $userid);
 		
 file_put_contents("aaa.txt", "1");
-		mysql_connect( 'localhost:/tmp/mysql.sock', 'root', '0210' );
+		mysql_connect( 'localhost:/tmp/mysql.sock', '', '' );
 mysql_select_db( 'chat2' );
 $s = ("SELECT gid FROM userprof where user = $userid LIMIT 1");
  mysql_query("insert into chatitems (message) values ('The operent leaved...') where gid = $gid"); 

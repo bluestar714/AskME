@@ -5,7 +5,7 @@ $params = $_POST;
                 $obj = json_decode($j, true);
                 $userid = $obj['foo']['id'];
 		$genre = intval($obj['foo']['genre']);
-		mysql_connect( 'localhost:/tmp/mysql.sock', 'root', '0210' );
+		mysql_connect( 'localhost:/tmp/mysql.sock', '', '' );
 		$hash = array();
 		$hash['flg'] = "0";
 mysql_select_db( 'chat2' );

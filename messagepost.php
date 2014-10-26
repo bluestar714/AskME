@@ -1,6 +1,6 @@
 <?php
 header( 'Content-type: text/xml' );
-mysql_connect( 'localhost:/tmp/mysql.sock', 'root', '0210' );
+mysql_connect( 'localhost:/tmp/mysql.sock', '', '' );
 mysql_select_db( 'chat2' );
 $userid = $_REQUEST['user'];
 file_put_contents("uu.txt", $_REQUEST['user']);

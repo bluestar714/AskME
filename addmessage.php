@@ -1,6 +1,6 @@
 <?php
 header( 'Content-type: text/xml' );
-mysql_connect( 'localhost:/tmp/mysql.sock', 'root', '0210' );
+mysql_connect( 'localhost:/tmp/mysql.sock', '', '' );
 mysql_select_db( 'chat2' );
 
 $r = file_put_contents("debug.txt", $_REQUEST['user']);
